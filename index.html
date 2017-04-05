@@ -26,6 +26,57 @@
             font-family: 'padrao' !important;
 
         }
+
+        .prox_talk {
+
+            position: relative;
+            width: 3.5em;
+            height: 25em;
+            float: left;
+            text-align: center;
+            border-width: 2px;
+            border-style: solid;
+
+
+
+        }
+
+        .azul_claro {
+
+            border-color: #01A3F4;
+            color: #01A3F4;
+            border-left: none;
+
+        }
+
+        .azul_escuro {
+
+            border-color: #005A87;
+            color: #005A87;
+            border-left: none;
+
+
+        }
+
+        .prox_talk b {
+
+            width: 25em; /* same as height of .rotateObj */
+            -webkit-transform-origin: 0 0;
+            display: inline-block;
+            -webkit-transform: rotate(-90deg);
+            text-align: center;
+            margin-top: 25em;
+            line-height: 3.5em;
+            font-size: 1em
+
+        }
+
+        .prox_talk b span {
+
+            font-size: 1.7em;
+            font-weight: 900
+
+        }
     </style>
 </head>
 <body>
@@ -52,8 +103,8 @@
 </div>
 
 <div style="margin-top: 10em;border: solid #cccccc 1px; height: 25.14em;">
-    <div style="width: 3.5em; background-color: #005A87; height: 25em; float: left"></div>
-    <div style="width: 3.5em; background-color: #01A3F4; height: 25em; float: left"></div>
+    <div class="prox_talk azul_escuro"><b><span>Proximo Talk</span></b></div>
+    <div class="prox_talk azul_claro"><b><span>31/01</span></b></div>
 </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
